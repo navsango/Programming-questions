@@ -1,0 +1,174 @@
+// 1. Find the greatest number of he given five numbers
+
+public class Demo{
+	public static void main(String[] args) {
+		
+		
+		int n1=5, n2=8, n3=30, n4=10, n5=15;
+		
+		if(n1>n2 && n1>n3&& n1>n4 && n1>n5) {
+		System.out.println("Greatest number is: " +n1);
+		}
+		else if(n2>n3&& n2>n4 && n2>n5) {
+			System.out.println("Greatest number is: " +n2);
+		}
+		else if(n3>n4 && n3>n5) {
+			System.out.println("Greatest number is: " +n3);
+		}
+		else if(n4>n5) {
+			System.out.println("Greatest number is: " +n4);
+		}
+		else {
+			System.out.println("Greatest number is: " +n5);
+		}
+		
+	}
+}
+
+// 2. Find whether the given character is a vowel or a consonent
+
+public class Demo{
+	public static void main(String[] args) {
+		char ch='m';
+		
+		if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U') {
+			System.out.println("The charactor '"+ch+"' is a vowel");
+		}
+		else {
+			System.out.println("The charater '"+ch+"' is a consonent");
+		}
+		
+	}
+}
+
+
+// 3.Find whether the given year is a leap year or not
+
+public class Demo{
+	public static void main(String[] args) {
+		int year=1900;
+		if((year%4==0 && year%100!=0) || year%400==0) {
+			System.out.println("The year '"+year+"' is a leap year ");
+		}
+		else {
+			System.out.println("The year '"+year+"' is not a leap year");
+		}
+		
+	}
+}
+
+// 4.Find the given charater if it's a number or an alphabet or a special character
+
+public class Demo{
+	public static void main(String[] args) {
+		char ch='p';
+		if(ch>='0' && ch<='9') {
+			System.out.println(ch+"-- is a number");
+		}
+		else if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')) {
+			System.out.println( ch+"-- is an alphabet");
+		}else {
+			System.out.println(ch+" -- is a special charater");
+		}
+		
+	}
+}
+
+// 5.Converting the case of the given character(Lowercase ~ uppercase)
+
+public class Demo{
+	public static void main(String[] args) {
+		char ch='M';
+		if(ch>='a' && ch<='z') {
+			System.out.println((char)(ch-32));
+		}
+		else if(ch>='A' && ch<='Z') {
+			System.out.println((char)(ch+32));
+		}
+		else {
+			System.out.println("Given number is not a alphabet");
+		}
+	}
+}
+
+
+// 6. Find the number of even numbers between two numbers
+
+public class Demo{
+	public static void main(String[] args) {
+		int n = 25;
+		int count = 0;
+		for(int i = 1;i<=n;i++) {
+			if(i%2==0) {
+				count++;
+			}
+		}
+		System.out.println("The number of even number that exist between 0 and " +n+" is  "+count);
+	}
+}
+
+// 7. Find the factors of a number
+
+public class Demo{
+	public static void main(String[] args) {
+		int n = 278;
+		for(int i=1;i<=n;i++) {
+			if(n%i==0) {
+				System.out.print(i+" ");
+			}
+		}
+	
+	
+	
+	}
+}
+
+// 8. Find the number of factors of a given number.
+
+public class Demo{
+	public static void main(String[] args) {
+		int n = 278;
+		int count = 0;
+		for(int i=1;i<=n;i++) {
+			if(n%i==0) {
+				count++;
+			}
+		}
+		System.out.println("The are " +count+" factors for the number"+n);
+	
+	
+	}
+}
+
+// 9. Find whether the given number is prime number or not?
+
+public class Demo{
+	public static void main(String[] args) {
+		int n = 277;
+		int count = 0;
+		for(int i=1;i<=n;i++) {
+			if(n%i==0) {
+				count++;
+			}
+		}
+		if(count==2) {
+			System.out.println("the given number "+n+" is a prime number");
+		}
+		else {
+			System.out.println("The given number "+n+" is not a prime number");
+		}
+}
+}
+
+// 10. Addition of numbers between two ranges.
+
+public class Demo{
+	public static void main(String[] args) {
+		int n = 278;
+		int sum = 0;
+		for(int i=1;i<=n;i++){
+			sum += i;
+		}
+		System.out.println(sum);
+	}
+}
